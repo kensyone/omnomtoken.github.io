@@ -6,55 +6,67 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="index.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container">
+    <div class="container p-3">
         <div class="row">
-            <div class="col">
-                Join Telegram
-            </div>
-            <div class="col">
-                Trade on DogeSwap
+            <div class="col text-end">
+                <button id="btn-telegram" type="button" class="btn btn-outline-info me-3">Join Telegram</button>
+                <button id="btn-trade-1" type="button" class="btn btn-outline-info">Trade on DogeSwap</button>
             </div>
         </div>
         <div class="row">
-            <div class="col">
+            <div class="col title fs-1 text-center mt-5">
                 <span>D</span><span>o</span><span>g</span><span>e</span>
-                <span>E</span><span>a</span>t<span>t</span>
+                <span>E</span><span>a</span><span>t</span>
                 <span>D</span><span>o</span><span>g</span><span>e</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col subtitle fs-3 text-center mt-1 mb-5">
                 (OMNOM)
             </div>
         </div>
-        <div class="row">
-            <div class="col">
-                <img src="" />
+        <div class="row mb-5">
+            <div class="col text-center">
+                <img src="doge.gif" />
             </div>
         </div>
         <div class="row">
-            <div class="col">
+            <div class="col text-center fs-5 mb-5">
                 Let's eat SHIB for breakfast
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-4">
+            <div class="col-lg-4 mb-4 text-center">
                 Shiba Inu (SHIB) is an ERC20 meme token that was created to kill Dogecoin. Doge Eat Doge (OMNOM) is
                 fighting back - get the first meme token on Dogechain to eat SHIB.
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 mb-4 text-center">
                 69% of the OMNOM supply has been burned to Vitalik Buterin (Ethereum founder) on Dogechain. As long as
                 he doesn't join Dogechain, we'll be alright.
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 mb-4 text-center">
                 31% of the OMNOM supply has been added to a pool on DogeSwap.org.
             </div>
         </div>
         <div class="row">
-            <div class="col">
-                <button>Trade on DogeSwap</button>
+            <div class="col text-center">
+                <button id="btn-trade-2" type="button" class="btn btn-lg btn-info text-white">Trade on DogeSwap</button>
             </div>
         </div>
     </div>
+
+    <script>
+        const createLinkButton = (id, url) => document.getElementById(id)
+            .addEventListener("click", () => window.open(url, "_blank"));
+
+        createLinkButton("btn-trade-1", "https://www.dogeswap.org");
+        createLinkButton("btn-trade-2", "https://www.dogeswap.org");
+        createLinkButton("btn-telegram", "https://t.me/+pEeEw79HKZBkMDhi");
+    </script>
 </body>
 
 </html>

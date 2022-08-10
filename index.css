@@ -1,0 +1,52 @@
+.title, .subtitle {
+    font-family: "Comic Sans MS", "Comic Sans", "Chalkboard SE", Chalkboard, Chilanka, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.title > span:nth-child(1) {
+    color: fuchsia;
+}
+
+.title > span:nth-child(2) {
+    color: limegreen;
+}
+
+.title > span:nth-child(3) {
+    color: orangered;
+}
+
+.title > span:nth-child(4) {
+    color: pink;
+}
+
+.title > span:nth-child(5) {
+    color: cornflowerblue;
+}
+
+.title > span:nth-child(6) {
+    color: gold;
+}
+
+.title > span:nth-child(7) {
+    color: maroon;
+}
+
+.title > span:nth-child(8) {
+    color: lightskyblue;
+}
+
+.title > span:nth-child(9) {
+    color: orange;
+}
+
+.title > span:nth-child(10) {
+    color: seagreen;
+}
+
+.title > span:nth-child(11) {
+    color: purple;
+}
+
+.btn-outline-info:hover, .btn-outline-info:active, .btn-outline-info:focus, .btn-outline-info:target {
+    color: white !important;
+}
